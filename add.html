@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title>Add Booking</title>
+</head>
+
+<body style="background-color:rgb(115, 196, 196)">
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+		
+		body {
+		  font-family: Monaco;
+		  font-size: 17px;
+		}
+		
+		.container {
+		  position: relative;
+		  max-width: 800px;
+		  margin: 0 auto;
+		}
+		
+		.container img {vertical-align: middle;}
+		
+		.container .content {
+		  position: absolute;
+		  bottom: 0;
+		  background: rgb(0, 0, 0); /* Fallback color */
+		  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		  color: #f1f1f1;
+		  width: 100%;
+		  padding: 20px;
+		}
+
+		.center {
+  			margin-left: auto;
+  			margin-right: auto;
+		}
+		</style>
+
+	
+	<br/><br/>
+
+	<form action="add.php" method="post" name="form1">
+		
+		<div class="container">
+		<a href="index.php" style="color:white;font-weight:900" >Home</a>
+		<img src="img_girl.jpg" alt="Notebook" style="width:100%;">
+		<div class="content">
+		<table class="center" width="100%" border="2">
+			<tbody style="background-color: white; box-shadow: 110px black;border: 1px solid white;padding: 10px;box-shadow: 5px 10px #888888;">
+			<tr> 
+				<td>Name</td>
+				<td><input type="text" name="name"size="90"></td>
+			</tr>
+			<tr> 
+				<td>No of people</td>
+				<td><input type="text" name="age" id="Numberofpeople"size="90"></td>  
+			</tr>
+			<tr> 
+				<td>Email</td>
+				<td><input type="text" name="email"size="90"></td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="Submit" value="Add" size="100"></td>
+			</tr>
+			</tbody>
+		</table>
+		</div>
+	</div>
+
+	</form>
+</body>
+</html>
+
